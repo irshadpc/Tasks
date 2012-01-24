@@ -1,14 +1,14 @@
 //
-//  RemindersAppDelegate.m
-//  Reminders Pro
+//  TasksAppDelegate.m
+//  Tasks
 //
 //  Created by Ami Schreiber on 1/17/12.
 //  Copyright (c) 2012 Unisys Corporation. All rights reserved.
 //
 
-#import "RemindersAppDelegate.h"
+#import "TasksAppDelegate.h"
 
-@implementation RemindersAppDelegate
+@implementation TasksAppDelegate
 
 @synthesize window = _window;
 

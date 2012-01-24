@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0TP-Vc-kvO">
+    <dependencies>
+        <development version="4200" defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="CK7-1c-hXU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nby-MZ-Lix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="pBe-9c-Zv0" customClass="ListTasksViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hNr-6U-lzm">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReminderCell" textLabel="kVI-2o-niU" detailTextLabel="vRQ-Ce-pnN" style="IBUITableViewCellStyleSubtitle" id="FA2-4e-AvO">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kVI-2o-niU">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vRQ-Ce-pnN">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="GPn-eW-gma" kind="push" id="HtK-Dh-Xmv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pBe-9c-Zv0" id="p2J-QR-qMW"/>
+                            <outlet property="delegate" destination="pBe-9c-Zv0" id="E9U-QW-e0j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tasks" id="HHt-Go-wnW">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="oLK-jd-fHg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xnU-Ji-Mv0">
+                            <connections>
+                                <segue destination="x3p-PT-dkN" kind="push" id="0Q4-lq-r2X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="13" y="-388"/>
+        </scene>
+        <scene sceneID="5oQ-KT-puA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiU-eL-AdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="x3p-PT-dkN" customClass="AddTasksViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G1k-XO-UY8">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" minimumFontSize="17" id="NSo-Zu-eRt">
+                                <rect key="frame" x="20" y="54" width="285" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Due Date" minimumFontSize="17" id="AAM-CT-ucY" customClass="DateField">
+                                <rect key="frame" x="19" y="93" width="285" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dueDateDidBeginEditing:" destination="x3p-PT-dkN" eventType="editingDidBegin" id="ipA-FT-Rtx"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" id="VIt-tJ-k3I">
+                                <rect key="frame" x="20" y="15" width="285" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add" id="E4H-n6-l7e">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="gNz-2n-2ea"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Etc-tK-qoM"/>
+                        <connections>
+                            <outlet property="backBarButtonItem" destination="Etc-tK-qoM" id="KDk-bG-nQu"/>
+                        </connections>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="570" y="-388"/>
+        </scene>
+        <scene sceneID="EGm-3q-Rct">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceF-jK-Iip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GPn-eW-gma" customClass="DetailTasksViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZKC-Jp-3Pi">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="Vr5-kp-o3n"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="570" y="221"/>
+        </scene>
+        <scene sceneID="ViE-Om-u0T">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqM-WW-i9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController title="Reminders Pro" definesPresentationContext="YES" id="0TP-Vc-kvO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7GQ-rv-jO4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pBe-9c-Zv0" kind="relationship" relationship="rootViewController" id="2q1-wo-x2X"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-442" y="-388"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AddTasksViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddTasksViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dateChanged:"/>
+                <relationship kind="action" name="doneEditing:"/>
+                <relationship kind="action" name="dueDateDidBeginEditing:" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="description" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="dueDate" candidateClass="DateField"/>
+                <relationship kind="outlet" name="shortTitle" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="DateField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DateField.h"/>
+        </class>
+        <class className="DetailTasksViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailTasksViewController.h"/>
+        </class>
+        <class className="ListTasksViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListTasksViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Reminders Pro' target in the 'Reminders Pro' project
+// Prefix header for all source files of the 'Tasks' target in the 'Tasks' project
 //
 
 #import <Availability.h>

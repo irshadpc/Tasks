@@ -12,27 +12,39 @@
 		A12F126D14C5F198000661A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12F126C14C5F198000661A3 /* CoreGraphics.framework */; };
 		A12F127314C5F198000661A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12F127114C5F198000661A3 /* InfoPlist.strings */; };
 		A12F127514C5F198000661A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F127414C5F198000661A3 /* main.m */; };
-		A12F127914C5F198000661A3 /* RemindersAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F127814C5F198000661A3 /* RemindersAppDelegate.m */; };
+		A12F127914C5F198000661A3 /* TasksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F127814C5F198000661A3 /* TasksAppDelegate.m */; };
 		A12F127C14C5F198000661A3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12F127A14C5F198000661A3 /* MainStoryboard_iPhone.storyboard */; };
 		A12F127F14C5F198000661A3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12F127D14C5F198000661A3 /* MainStoryboard_iPad.storyboard */; };
-		A12F128214C5F198000661A3 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F128114C5F198000661A3 /* RemindersViewController.m */; };
+		A12F128A14C614D7000661A3 /* ListTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F128914C614D7000661A3 /* ListTasksViewController.m */; };
+		A12F128D14C61684000661A3 /* EditTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F128C14C61684000661A3 /* EditTasksViewController.m */; };
+		A12F129014C61739000661A3 /* DetailTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F128F14C61739000661A3 /* DetailTasksViewController.m */; };
+		A12F129314C6181C000661A3 /* AddTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F129214C6181C000661A3 /* AddTasksViewController.m */; };
+		A148D8F414CCC9D700F1EDFC /* DateField.m in Sources */ = {isa = PBXBuildFile; fileRef = A148D8F314CCC9D700F1EDFC /* DateField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A12F126414C5F198000661A3 /* Reminders Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reminders Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12F126414C5F198000661A3 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12F126814C5F198000661A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A12F126A14C5F198000661A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A12F126C14C5F198000661A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A12F127014C5F198000661A3 /* Reminders Pro-Info.plist */ = {isa = PBXFileReference; path = "Reminders Pro-Info.plist"; sourceTree = "<group>"; };
+		A12F127014C5F198000661A3 /* Tasks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tasks-Info.plist"; sourceTree = "<group>"; };
 		A12F127214C5F198000661A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A12F127414C5F198000661A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A12F127614C5F198000661A3 /* Reminders Pro-Prefix.pch */ = {isa = PBXFileReference; path = "Reminders Pro-Prefix.pch"; sourceTree = "<group>"; };
-		A12F127714C5F198000661A3 /* RemindersAppDelegate.h */ = {isa = PBXFileReference; path = RemindersAppDelegate.h; sourceTree = "<group>"; };
-		A12F127814C5F198000661A3 /* RemindersAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindersAppDelegate.m; sourceTree = "<group>"; };
+		A12F127614C5F198000661A3 /* Tasks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tasks-Prefix.pch"; sourceTree = "<group>"; };
+		A12F127714C5F198000661A3 /* TasksAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksAppDelegate.h; sourceTree = "<group>"; };
+		A12F127814C5F198000661A3 /* TasksAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksAppDelegate.m; sourceTree = "<group>"; };
 		A12F127B14C5F198000661A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A12F127E14C5F198000661A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A12F128014C5F198000661A3 /* RemindersViewController.h */ = {isa = PBXFileReference; path = RemindersViewController.h; sourceTree = "<group>"; };
-		A12F128114C5F198000661A3 /* RemindersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindersViewController.m; sourceTree = "<group>"; };
+		A12F128814C614D7000661A3 /* ListTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTasksViewController.h; sourceTree = "<group>"; };
+		A12F128914C614D7000661A3 /* ListTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTasksViewController.m; sourceTree = "<group>"; };
+		A12F128B14C61684000661A3 /* EditTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTasksViewController.h; sourceTree = "<group>"; };
+		A12F128C14C61684000661A3 /* EditTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTasksViewController.m; sourceTree = "<group>"; };
+		A12F128E14C61739000661A3 /* DetailTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTasksViewController.h; sourceTree = "<group>"; };
+		A12F128F14C61739000661A3 /* DetailTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTasksViewController.m; sourceTree = "<group>"; };
+		A12F129114C6181C000661A3 /* AddTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTasksViewController.h; sourceTree = "<group>"; };
+		A12F129214C6181C000661A3 /* AddTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTasksViewController.m; sourceTree = "<group>"; };
+		A148D8F214CCC9D700F1EDFC /* DateField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateField.h; sourceTree = "<group>"; };
+		A148D8F314CCC9D700F1EDFC /* DateField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,7 @@
 		A12F125914C5F198000661A3 = {
 			isa = PBXGroup;
 			children = (
-				A12F126E14C5F198000661A3 /* Reminders Pro */,
+				A12F126E14C5F198000661A3 /* Tasks */,
 				A12F126714C5F198000661A3 /* Frameworks */,
 				A12F126514C5F198000661A3 /* Products */,
 			);
@@ -61,7 +73,7 @@
 		A12F126514C5F198000661A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A12F126414C5F198000661A3 /* Reminders Pro.app */,
+				A12F126414C5F198000661A3 /* Tasks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,27 +88,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A12F126E14C5F198000661A3 /* Reminders Pro */ = {
+		A12F126E14C5F198000661A3 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				A12F127714C5F198000661A3 /* RemindersAppDelegate.h */,
-				A12F127814C5F198000661A3 /* RemindersAppDelegate.m */,
+				A12F129114C6181C000661A3 /* AddTasksViewController.h */,
+				A12F129214C6181C000661A3 /* AddTasksViewController.m */,
+				A148D8F214CCC9D700F1EDFC /* DateField.h */,
+				A148D8F314CCC9D700F1EDFC /* DateField.m */,
+				A12F128E14C61739000661A3 /* DetailTasksViewController.h */,
+				A12F128F14C61739000661A3 /* DetailTasksViewController.m */,
+				A12F128B14C61684000661A3 /* EditTasksViewController.h */,
+				A12F128C14C61684000661A3 /* EditTasksViewController.m */,
+				A12F128814C614D7000661A3 /* ListTasksViewController.h */,
+				A12F128914C614D7000661A3 /* ListTasksViewController.m */,
 				A12F127A14C5F198000661A3 /* MainStoryboard_iPhone.storyboard */,
 				A12F127D14C5F198000661A3 /* MainStoryboard_iPad.storyboard */,
-				A12F128014C5F198000661A3 /* RemindersViewController.h */,
-				A12F128114C5F198000661A3 /* RemindersViewController.m */,
+				A12F127714C5F198000661A3 /* TasksAppDelegate.h */,
+				A12F127814C5F198000661A3 /* TasksAppDelegate.m */,
 				A12F126F14C5F198000661A3 /* Supporting Files */,
 			);
-			path = "Reminders Pro";
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 		A12F126F14C5F198000661A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A12F127014C5F198000661A3 /* Reminders Pro-Info.plist */,
+				A12F127014C5F198000661A3 /* Tasks-Info.plist */,
 				A12F127114C5F198000661A3 /* InfoPlist.strings */,
 				A12F127414C5F198000661A3 /* main.m */,
-				A12F127614C5F198000661A3 /* Reminders Pro-Prefix.pch */,
+				A12F127614C5F198000661A3 /* Tasks-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -104,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A12F126314C5F198000661A3 /* Reminders Pro */ = {
+		A12F126314C5F198000661A3 /* Tasks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A12F128514C5F198000661A3 /* Build configuration list for PBXNativeTarget "Reminders Pro" */;
+			buildConfigurationList = A12F128514C5F198000661A3 /* Build configuration list for PBXNativeTarget "Tasks" */;
 			buildPhases = (
 				A12F126014C5F198000661A3 /* Sources */,
 				A12F126114C5F198000661A3 /* Frameworks */,
@@ -116,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = "Reminders Pro";
+			name = Tasks;
 			productName = "Reminders Pro";
-			productReference = A12F126414C5F198000661A3 /* Reminders Pro.app */;
+			productReference = A12F126414C5F198000661A3 /* Tasks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,9 +148,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "Unisys Corporation";
+				ORGANIZATIONNAME = "Square Root";
 			};
-			buildConfigurationList = A12F125E14C5F198000661A3 /* Build configuration list for PBXProject "Reminders Pro" */;
+			buildConfigurationList = A12F125E14C5F198000661A3 /* Build configuration list for PBXProject "Tasks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -142,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A12F126314C5F198000661A3 /* Reminders Pro */,
+				A12F126314C5F198000661A3 /* Tasks */,
 			);
 		};
 /* End PBXProject section */
@@ -166,8 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12F127514C5F198000661A3 /* main.m in Sources */,
-				A12F127914C5F198000661A3 /* RemindersAppDelegate.m in Sources */,
-				A12F128214C5F198000661A3 /* RemindersViewController.m in Sources */,
+				A12F127914C5F198000661A3 /* TasksAppDelegate.m in Sources */,
+				A12F128A14C614D7000661A3 /* ListTasksViewController.m in Sources */,
+				A12F128D14C61684000661A3 /* EditTasksViewController.m in Sources */,
+				A12F129014C61739000661A3 /* DetailTasksViewController.m in Sources */,
+				A12F129314C6181C000661A3 /* AddTasksViewController.m in Sources */,
+				A148D8F414CCC9D700F1EDFC /* DateField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +276,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reminders Pro/Reminders Pro-Prefix.pch";
-				INFOPLIST_FILE = "Reminders Pro/Reminders Pro-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Tasks/Tasks-Prefix.pch";
+				INFOPLIST_FILE = "Tasks/Tasks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Tasks;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -263,9 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reminders Pro/Reminders Pro-Prefix.pch";
-				INFOPLIST_FILE = "Reminders Pro/Reminders Pro-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Tasks/Tasks-Prefix.pch";
+				INFOPLIST_FILE = "Tasks/Tasks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Tasks;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -273,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A12F125E14C5F198000661A3 /* Build configuration list for PBXProject "Reminders Pro" */ = {
+		A12F125E14C5F198000661A3 /* Build configuration list for PBXProject "Tasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A12F128314C5F198000661A3 /* Debug */,
@@ -282,13 +310,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A12F128514C5F198000661A3 /* Build configuration list for PBXNativeTarget "Reminders Pro" */ = {
+		A12F128514C5F198000661A3 /* Build configuration list for PBXNativeTarget "Tasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A12F128614C5F198000661A3 /* Debug */,
 				A12F128714C5F198000661A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
